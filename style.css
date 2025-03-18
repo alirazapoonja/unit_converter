@@ -1,0 +1,56 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f5f5f5; /* Light gray background */
+    color: #333;
+}
+
+/* Title Styling */
+h1 {
+    color: #4CAF50; /* Green title */
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Cards */
+.result-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    animation: slideIn 1s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.result-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.result-card h3 {
+    color: #2196F3; /* Blue heading */
+}
+
+.result-card p {
+    color: #E91E63; /* Pink text */
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
